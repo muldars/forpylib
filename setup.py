@@ -2,12 +2,8 @@
 
 from setuptools import setup, find_packages
 from os import path
-import sys
-import mock
- 
-MOCK_MODULES = ['numpy',  'matplotlib', 'matplotlib.pyplot','pandas']
-for mod_name in MOCK_MODULES:
-    sys.modules[mod_name] = mock.Mock()
+
+
 
 LICENSE = open('LICENSE').read()
 
@@ -27,7 +23,7 @@ setup(
     author='UXFS Statistics & Operations Research Team (UXFSort)',
     author_email='josemario.gonzalez@usc.es',
     url='http://bitbucket.org/forostm/forpylib.git',
-    packages=find_packages(),
+    packages=['forpylib'],
     license='GPLv3',
     keywords=[
         'forest', 'simulator', 'DSS','optimization'
