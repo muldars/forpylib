@@ -1,3 +1,5 @@
+![Alt text](/doc/logo.jpg)
+
 forpylib
 ========
 
