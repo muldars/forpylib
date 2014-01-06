@@ -63,7 +63,7 @@ copyright = u'2013, UXFS Operational Research Team'
 #
 # The short X.Y version.
 
-VERSION = open('../VERSION.md').readline().strip()
+VERSION = open('../VERSION').readline().strip()
 version = VERSION
 # The full version, including alpha/beta/rc tags.
 
