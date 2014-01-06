@@ -5,13 +5,13 @@
 
 
 
-.. automodule:: simulation
+.. automodule:: forpylib.simulation
   :members:
 
 .. autosummary::
   :nosignatures:
   
-  simulation.PrescriptionWriter
+  forpylib.simulation.PrescriptionWriter
 
 
 
