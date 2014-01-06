@@ -46,7 +46,7 @@ class PrescriptionWriter(object):
         interval : int,
                    period length in years
 
-    Example:
+    :Example:
     
         Creates a new stand forest management prescription object for 10 periods 
         of 5 years length
@@ -130,7 +130,7 @@ class PrescriptionWriter(object):
         """
         Generates a list of the specified actions in the current prescription
 
-        Returns:
+        :Returns:
                 pandas.dataset, actions in the current prescription
         """
         return self.actions.reindex(columns=columns)
@@ -143,7 +143,7 @@ class Simulator(object):
     A class to generate stand tables on the basis of the initial state of
     the stands and the specified management prescriptions
 
-    Parameters:
+    :Parameters:
     
 
         prescription : simulation.PrescriptionWriter
@@ -160,7 +160,7 @@ class Simulator(object):
                    if False, the prescription is applied from the year: zero
             
             
-    Example:
+    :Example:
 
         Creates a new stand table on the basis of the initital state of the
         stand and the specified prescription
@@ -194,12 +194,12 @@ class Simulator(object):
                                         'Ga', 'Va', 'HBIa', 'MAI', 'PAI'])):
         """Generates a dataset with the simulated stand table
 
-        Parameters:
+        :Parameters:
    
             colums : array,
                 name of stand variables to include in the dataset
 
-        Returns:
+        :Returns:
 
             ds : pandas.dataset,
         """
