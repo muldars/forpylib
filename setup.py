@@ -6,7 +6,7 @@ from os import path
 LICENSE = open('LICENSE.md').read()
 
 
-v = open(path.join(path.dirname(__file__), 'VERSION.md'))
+v = open(path.join(path.dirname(__file__), 'VERSION'))
 VERSION = v.readline().strip()
 v.close()
 
