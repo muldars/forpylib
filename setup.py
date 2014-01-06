@@ -5,6 +5,11 @@ from os import path
 import sys
 import os
 
+# add the pyudev source directory to our path
+doc_directory = os.path.dirname(os.path.abspath(__file__))
+sys.path.append(os.path.normpath(
+    os.path.join(doc_directory, os.pardir)))
+
 
 class Mock(object):
     def __init__(self, *args, **kwargs):
