@@ -2,6 +2,12 @@
 
 from setuptools import setup, find_packages
 from os import path
+import sys
+import mock
+ 
+MOCK_MODULES = ['numpy',  'matplotlib', 'matplotlib.pyplot','pandas']
+for mod_name in MOCK_MODULES:
+    sys.modules[mod_name] = mock.Mock()
 
 LICENSE = open('LICENSE').read()
 
