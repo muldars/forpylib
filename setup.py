@@ -27,7 +27,8 @@ setup(
         'forest', 'simulator', 'DSS','optimization'
         'decision', 'support', 'system','growth'
     ],
-    install_requires=['numpy', 'pandas', 'matplotlib',],
+    install_requires=['numpy', 'pandas', 'matplotlib'],
+    zip_safe=False,
     classifiers=(
         'Development Status :: 2 - Pre-Alpha',
         'Intended Audience :: Education',
