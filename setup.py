@@ -3,7 +3,7 @@
 from setuptools import setup, find_packages
 from os import path
 
-LICENSE = open('LICENSE.md').read()
+LICENSE = open('LICENSE').read()
 
 
 v = open(path.join(path.dirname(__file__), 'VERSION'))
