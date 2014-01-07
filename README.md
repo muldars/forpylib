@@ -1,4 +1,4 @@
-![](doc/logo.png?raw=true)
+forpylib
 ========
 
 A Python library for forest optimization & simulation.
