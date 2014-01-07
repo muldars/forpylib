@@ -65,12 +65,13 @@ class PrescriptionWriter(object):
 
         :Parameters:
         
-            period : int, in the range [1..self.periods] 
-                     final harvest period
+            period : int, 
+                     final harvest period in the range [1..self.periods] 
         
         :Returns:
         
-            Bool, True if the action has been succesfully added to the presciption,
+            Bool, 
+                  True if the action has been succesfully added to the presciption,
                   False otherwise
 
         :Examples:
@@ -90,17 +91,19 @@ class PrescriptionWriter(object):
             period :  int, in the range [1..self.periods] 
                       thinning period
     
-            ti : float, in the range [0..100]
+            ti : float,
                  thinning intensity (the percentage of trees to remove)
     
-            rr : float, in the range [0.5..1.5]
+            rr : float,
                  stand basal area removal ratio (the ratio of stand basal area
                  to remove to stand basal area before thinning times the ratio of
-                 number of trees before thinning to number of trees to remove)
+                 number of trees before thinning to number of trees to remove) 
+                 in the range [0.5..1.5]
 
         :Returns:
         
-            bool, True if the action has been succesfully added to the presciption,
+            bool, 
+                  True if the action has been succesfully added to the presciption,
                   False otherwise
 
         :Examples:
@@ -155,7 +158,7 @@ class Simulator(object):
                 the initial state of a stand of a given species for which
                 there exists a dynamic stand growth modell
         
-        relative : bool
+        relative : bool,
                    if True, the prescription is applied from the year: stand.t
                    if False, the prescription is applied from the year: zero
             
